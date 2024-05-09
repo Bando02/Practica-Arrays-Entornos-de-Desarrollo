@@ -77,7 +77,7 @@ public abstract class MisArrays {
 				}
 			}
 		 Arrays.sort(array);
-		 float a = array[array.length - 1];
+		 float a = array[array.length];
 		 
 		 return a;
 	 }
