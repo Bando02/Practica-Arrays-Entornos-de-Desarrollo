@@ -1,0 +1,49 @@
+package util;
+
+
+public abstract class MisArrays {
+	
+	public float mediaNota(int[]array) {
+		
+		float b = 0;
+		for(int i = 0 ; i < array.length ; i++) {
+			float a = array[i];
+			if(a <0 || a>10) {
+				throw new IllegalArgumentException("El valor sobrepasa los limites");
+			}
+			else {		
+			b = b + a;
+			}
+		}
+		
+		float media = b/array.length;
+		return media;
+	}
+	
+	 float medianaNotas (int[]array) {
+			for(int i = 0 ; i < array.length ; i++) {
+				float a = array[i];
+				if(a <0 || a>10) {
+					throw new IllegalArgumentException("El valor sobrepasa los limites");
+				}
+				else {		
+				
+				}
+			}
+			if(array.length%2 == 0) {
+				int d = array[array.length / 2];
+				int e = array[(array.length / 2)-1];
+				
+				float mediana = (d + e) / 2;
+				return mediana;
+			}
+			else {
+				float b = array.length / 2;
+				float c = array[(int) b];
+				return c;
+				
+			}
+	}
+	
+
+}
